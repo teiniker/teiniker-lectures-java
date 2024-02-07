@@ -1,1 +1,2 @@
-# teiniker-lectures-java
+# Java Programming by Example
+
