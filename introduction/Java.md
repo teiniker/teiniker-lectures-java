@@ -51,20 +51,20 @@ Oracle intends to make future **LTS releases every two years** meaning
 the next planned LTS release is Java 25 in September 2025.
 
 ```
-Java SE 8 (LTS)		2014 	March	
-Java SE 9			2017 	September 	
-Java SE 10			2018 	March 		
-Java SE 11 (LTS)	2018	September 
-Java SE 12 			2019	March 	
-Java SE 13 			2019	September
-Java SE 14 			2020	March
-Java SE 15 			2020	September
-Java SE 16 			2021	March
-Java SE 17 (LTS)	2021	September
-Java SE 18 			2022 	March
-Java SE 19 			2022 	September 
-Java SE 20			2023 	March 
-Java SE 21 (LTS)	2023 	September
+Java SE 8 (LTS)     2014    March	
+Java SE 9           2017    September 	
+Java SE 10          2018    March 		
+Java SE 11 (LTS)    2018    September 
+Java SE 12          2019    March 	
+Java SE 13          2019    September
+Java SE 14          2020    March
+Java SE 15          2020    September
+Java SE 16          2021    March
+Java SE 17 (LTS)    2021    September
+Java SE 18          2022    March
+Java SE 19          2022    September 
+Java SE 20          2023    March 
+Java SE 21 (LTS)    2023    September
 Java SE 22          2024    March 
 Java SE 23          2024    September 
 Java SE 24          2025    March 
