@@ -1,6 +1,41 @@
-# xUnit Basics
+# Test Automation
 
-All members of the xUnit family implement a basic set of features.
+A **unit test** is a piece of code that exercises a very small, 
+specific area of functionality of code being tested.
+
+* Unit tests are **written by programmers**.
+* Unit tests are performed to prove that a piece of code does what the developer 
+    thinks it should do.
+* Unit tests make our designs better and reduce the amount of time we spend for 
+    debugging.
+* Unit tests behave as **executable documentation**.
+
+
+## Four-Phases of a Test
+
+Each test is represented by a test method that implements a single 
+four-phase procedure:
+
+* **Setup**: We set up the test fixture that is required for the SUT to exhibit the 
+    expected behavior as well as anything we need to put in place to be able to 
+    observe the actual outcome.
+
+* **Exercise**: We interact with the SUT.
+
+* **Verify**: We do whatever is necessary to determine whether the expected 
+outcome has been obtained.
+
+* **Teardown**: We tear down the test fixture to put the world back into the 
+    state in which we found it.
+
+
+## xUnit Frameworks
+
+All members of the xUnit framework family implement a basic set of features.
+
+![xUnit Frameworks](figures/xUnitFramework.png)
+_Figure: xUnit Framework (Meszaros, 2007)_
+
 The individual parts of the test setting are:
 
 * **System under Test (SUT)**: Whatever thing we are testing. The SUT is 
@@ -33,24 +68,10 @@ class.
 	For each test error or test failure, xUnit records information that can be examined to help understand exactly what went wrong.
 
 
-## Four-Phases of a Test
-
-Each test is represented by a test method that implements a single 
-four-phase procedure:
-* **Setup**: We set up the test fixture that is required for the SUT to exhibit the expected behavior as well as anything we need to put in place to be able to observe the actual outcome.
-
-* **Exercise**: We interact with the SUT.
-
-* **Verify**: We do whatever is necessary to determine whether the expected 
-outcome has been obtained.
-
-* **Teardown**: We tear down the test fixture to put the world back into the 
-state in which we found it.
-
-
 ## References
 
 * Gerard Meszaros. **xUnit Test Patterns**. Addison-Wesley, 2007 
 * [xUnit Test Patterns Web Page](http://xunitpatterns.com/)
+* [JUnit](https://junit.org/junit4/)
 
 *Egon Teiniker, 2024, GPL v3.0*
