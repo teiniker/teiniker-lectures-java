@@ -25,6 +25,8 @@ scheme is one of the most important aspects of object-oriented analysis and desi
     * _Exercise_: [Expression](ObjectDiagram-Expression-Exercise) - ([Model solution](ObjectDiagram-Expression))
 
 ## References
+* [The Java™ Tutorials: Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
+
 * Robert C. Martin. **UML for Java Programmers**. Prentice Hall, 2003
 
 *Egon Teiniker, 2024, GPL v3.0*
