@@ -423,3 +423,4 @@ offers.
 
 * Gradle
 
+*Egon Teiniker, 2024, GPL v3.0*

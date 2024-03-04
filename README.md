@@ -47,7 +47,7 @@
 
 6. Software Architectures
     * Layered Architectures
-    * Microservice ARchitectures 
+    * Microservice Architectures 
     
 7. Software Security 
 
