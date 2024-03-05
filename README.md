@@ -6,7 +6,7 @@
 2. [Configuration Management](configuration-management/)
     * [Source Code Versioning](configuration-management/versioning/)
     * [Build Automation](configuration-management/building/)
-    * [Test automation](configuration-management/testing/)
+    * [Test Automation](configuration-management/testing/)
     * [Documentation](configuration-management/documentation/)
 
 3. Java Programming 
