@@ -12,8 +12,8 @@
 3. Java Programming 
     1. Basics
         * [Java Virtual Machine](java-basics/jvm/)
-        * [Object-Oriented Conecpts](java-basics/oop/)
-        * Types and Variables 
+        * [Object-Oriented Conecpts](java-basics/oop/OOP-Concepts/)
+        * [Types and Operations](java-basics/types+operators/) 
         * Control Flow
         * Classes and Objects     
         * Packages
@@ -31,7 +31,7 @@
         * Sealed Classes
         * Pattern Matching for Switch
         * Text Blocks
-        * Java Modules 
+        * [Java Modules](java-modern/modules/) 
 
 4. Software Design 
     * UML in Practice
