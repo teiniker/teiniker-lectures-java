@@ -310,11 +310,19 @@ of time and is fixed.
 
 * [The Java™ Tutorials: Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
+* [Java API: Class Boolean](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html)
+* [Java API: Class Byte](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html)
+* [Java API: Class Short](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html)
 * [Java API: Class Integer](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html)
-
-
+* [Java API: Class Long](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html)
+* [Java API: Class Float](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html)
+* [Java API: Class Double](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html)
+* [Java API: Class Character](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Character.html)
 
 * [Java API: Class String](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html)
+
+* [Java API: Class BigInteger](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigInteger.html)
+* [Java API: Class BigDecimal](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html)
 
 * [The Java™ Tutorials: Arrays](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
 

@@ -21,11 +21,13 @@ public class StringTest
 	public void testStringConcatenationUsingStringBuilder()
 	{
 		int i = 7;
-		StringBuilder s = new StringBuilder();
-		s.append("i");
-		s.append("=").append(i);
+		String s = new StringBuilder()
+				.append("i")
+				.append("=")
+				.append(i)
+				.toString();
 
-		assertEquals("i=7", s.toString());
+		assertEquals("i=7", s);
 	}
 
 	// Some comment
