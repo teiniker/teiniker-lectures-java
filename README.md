@@ -15,7 +15,7 @@
 3. Java Programming 
     1. Basics
         * [Java Virtual Machine](java-basics/jvm/)
-        * [Object-Oriented Conecpts](java-basics/oop/OOP-Concepts/)
+        * [Object-Oriented Conecpts](java-basics/oop/oop-concepts/)
         * [Types and Operations](java-basics/types+operators/) 
         * Control Flow
         * Classes and Objects     
