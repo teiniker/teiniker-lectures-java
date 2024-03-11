@@ -3,7 +3,7 @@
 
 1. [Introduction](introduction/)
 
-2. [Configuration Management](configuration-management/)
+2. Configuration Management
     * [Source Code Versioning](configuration-management/versioning/)
     * [Build Automation](configuration-management/building/)
     * [Test Automation](configuration-management/testing/)
