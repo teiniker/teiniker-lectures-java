@@ -45,3 +45,5 @@ several library modules.
 When setting up a build file, we need to make sure to bundle each module in 
 our project as a separate JAR.
 
+
+*Egon Teiniker, 2024, GPL v3.0*
