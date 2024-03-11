@@ -1,4 +1,4 @@
-# Object-Oriented Programming
+# Classes and Objects
 
 A **class** is a descriptor for a set of objects that share the same attributes, 
 operations, methods, relationships and behavior.
