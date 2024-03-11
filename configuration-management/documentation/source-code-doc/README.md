@@ -104,33 +104,9 @@ It is **annoying to professional programmers**.
     your methods instead**.
 
 
-## API Documentation
-
-A **larger software system** will be **decomposed** into smaller subsystems.
-
-![Sub-System](figures/SubSystem.png)
-
-A subsystem is technically defined by **public interfaces and classes** of a package.
-
-
-The **Application Programming Interface (API)** of a subsystem is a set of by public macros, operations, classes and types.
-
-There is nothing quite so helpful and satisfying as a **well-documented public API**. 
-
-The API documentation defines the **contract** between the **subsystem** and **its clients**. 
-
-If we write a public API, we should also write a good API documentation using 
-a tool like **JavaDoc** or **Doxygen**.
-
-
 ## References
 
 * Robert C. Martin. **Clean Code - A Handbook of Agile Software Craftsmanship**. Prentice Hall, 2008
 
-* [JavaDoc]()
-* [Baeldung: Introduction to Javadoc](https://www.baeldung.com/javadoc)
-* [Oracle: How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
-
-* [Doxygen](https://www.doxygen.nl/)
 
 *Egon Teiniker, 2024, GPL v3.0*
