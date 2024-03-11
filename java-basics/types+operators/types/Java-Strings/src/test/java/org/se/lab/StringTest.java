@@ -9,7 +9,7 @@ import org.junit.Test;
 public class StringTest
 {
 	@Test
-	public void testStringConcatination()
+	public void testStringConcatenation()
 	{
 		int i = 7;
 		String s = "i" + "=" + i;
@@ -18,7 +18,7 @@ public class StringTest
 	}
 
 	@Test
-	public void testStringConcatinationUsingStringBuilder()
+	public void testStringConcatenationUsingStringBuilder()
 	{
 		int i = 7;
 		StringBuilder s = new StringBuilder();
