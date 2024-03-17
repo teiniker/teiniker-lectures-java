@@ -16,8 +16,12 @@
     1. Basics
         * [Java Virtual Machine](java-basics/jvm/)
         * [Object-Oriented Conecpts](java-basics/oop/oop-concepts/)
-        * [Types and Operations](java-basics/types+operators/) 
+        * Expressions 
+            * [Types](java-basics/types+operators/types/)
+            * [Operations](java-basics/types+operators/operators/)
         * Control Flow
+            * [Conditional Statements](java-basics/control-flow/conditional-statements/)
+            * [Loops](java-basics/control-flow/loops/)
         * Classes and Objects     
         * Packages
         * Exceptions
