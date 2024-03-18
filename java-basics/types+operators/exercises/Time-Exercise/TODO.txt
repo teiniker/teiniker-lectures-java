@@ -1,0 +1,35 @@
+Exercise: Time (Class, Types, Operators)
+-------------------------------------------------------------------------------
+
+Implement a "Time" class which has the integer fields "hours", "minutes", and
+"seconds".
+
+A) Read-Only Properties
+Implement the fields "hours", "minutes", and "seconds" read-only, which means
+that you create private fields and implement only getter methods.
+
+B) Integer Constructor
+Implement a constructor with the following parameters:
+    public Time(int hours, int minutes, int seconds)
+
+C) Object Methods
+Because this is a data class, implement the Object methods: "toString()",
+"equals()" and "hashCode()".
+
+D) String Constructor
+Implement a constructor with the following parameter:
+    public Time(String time)
+Here you have to split the string around the ":" characters into sub-strings
+and convert them into integer values.
+
+E) public int toSeconds()
+Implement a "toSeconds()" method which converts the stored time into seconds.
+
+F) public Time fromSeconds(long totalSeconds)
+Implement a "fromSeconds()" method which takes seconds and converts these into
+a new Time instance.
+
+Tip: Use "TimeTest" to verify your implementations.
+
+Tip: Try to implement your own solution first before looking at the model solution.
+     Only look if you get stuck or want to compare your solution with the model solution.

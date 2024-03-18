@@ -1,0 +1,44 @@
+Exercise: Date (Class, Types, Operators)
+-------------------------------------------------------------------------------
+
+Implement a "Date" class which has the integer fields "day", "month", and
+"year".
+
+A) Read-Only Properties
+Implement the fields "day", "month", and "year" read-only, which means
+that you create private fields and implement only getter methods.
+
+B) Integer Constructor
+Implement a constructor with the following parameters:
+    public Date(int day, int month, int year)
+
+C) Object Methods
+Because this is a data class, implement the Object methods: "toString()",
+"equals()" and "hashCode()".
+
+D) String Constructor
+Implement a constructor with the following parameter:
+    public Date(String date)
+Here you have to split the string around the "\\." characters into sub-strings
+and convert them into integer values.
+
+E) boolean isLeapYear()
+Implement a "isLeapYear()" method which determines if a given year is a leap year.
+Rules for calculating a leap year:
+    i) If the year is divisible by 4, it is potentially a Leap year
+    ii) If the year is divisible by 100, then it is NOT a leap year
+    iii) If the year is divisible by 400 then it is a leap year
+
+F) public boolean isValid()
+Implement a "isValid()" method which validates the stored values for "day", "month",
+and "year".
+Constraints:
+    year >= 1
+    1 <= month <=12
+    day: 28, 29, 30 or 31 depending on the month and if t is a leap year
+
+Tip: Use "DateTest" to verify your implementations.
+
+Tip: Try to implement your own solution first before looking at the model solution.
+     Only look if you get stuck or want to compare your solution with the model solution.
+     
