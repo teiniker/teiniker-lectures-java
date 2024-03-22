@@ -16,11 +16,18 @@
     1. Basics
         * [Java Virtual Machine](java-basics/jvm/)
         * [Object-Oriented Conecpts](java-basics/oop/oop-concepts/)
-        * [Types and Operations](java-basics/types+operators/) 
+        * Expressions 
+            * [Types](java-basics/types+operators/types/)
+            * [Enumerations](java-basics/types+operators/enumerations/)
+            * [Operations](java-basics/types+operators/operators/)
         * Control Flow
+            * [Conditional Statements](java-basics/control-flow/conditional-statements/)
+            * [Loops](java-basics/control-flow/loops/)
         * Classes and Objects     
-        * Packages
-        * Exceptions
+            * [Packages](java-basics/oop/packages/)
+            * Inheritance
+            * Interfaces
+            * Exceptions
         * Generics 
         * Collections
     2. Advanced
@@ -37,7 +44,6 @@
         * [Java Modules](java-modern/modules/) 
 
 4. Software Design 
-    * UML in Practice
     * SOLID Principles
     * (Best of) Design Patterns
     * Functional Programming
