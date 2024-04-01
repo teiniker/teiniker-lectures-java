@@ -63,7 +63,6 @@ The visibility of classes, interfaces, and members within packages is controlled
 by **access modifiers**:
 
 * **Public**: The class or member is accessible from any other class.
-* **Protected**: The member is accessible within its own package and by subclasses.
 * **Package Private (No Modifier)**: The class or member is accessible only within its 
     own package.
 

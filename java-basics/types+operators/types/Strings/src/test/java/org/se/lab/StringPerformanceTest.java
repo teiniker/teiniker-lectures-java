@@ -35,9 +35,9 @@ public class StringPerformanceTest
 		{
 			sb.append("X");
 		}
+		String s = sb.toString();
 		timer.stop();
 
-		String s = sb.toString();
 		System.out.println(s.length());
 		System.out.println(timer);
 	}
