@@ -20,7 +20,7 @@ public class BookTest
 	{
 		Book book = new Book("9780132350884", "Robert C. Martin", "Clean Code");
 
-		Assert.assertEquals("Book{isbn='9780132350884', author=Robert C. Martin, title=Clean Code}", book.toString());
+		Assert.assertEquals("Book{isbn='9780132350884', author='Robert C. Martin', title='Clean Code'}", book.toString());
 	}
 
 	@Test
