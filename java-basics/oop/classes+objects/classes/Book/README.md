@@ -54,7 +54,7 @@ In addition, you can further restrict access to the fields via the visibility of
 Validation of the data in the setter methods is also possible.
 
 
-## Object Class Methods
+## Object-Class Methods
 
 It's a bit confusing, but in Java there is a base class from which all classes are implicitly derived - 
 this class is called **Object**.
