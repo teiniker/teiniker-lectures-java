@@ -18,7 +18,7 @@
 * [Class Members](static-members/)
 * [Overloading](overloading/)
 * [Nested Classes](nested-classes/)
-* [Java Records](records/)
+* [Records](records/)
 
 
 ## References
