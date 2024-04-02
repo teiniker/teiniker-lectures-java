@@ -13,29 +13,42 @@
         * [Unified Modeling Language (UML)](configuration-management/documentation/uml/)
 
 3. Java Programming 
+
     1. Basics
-        * [Java Virtual Machine](java-basics/jvm/)
+        * Java Virtual Machine
+            * [Class Loader](java-basics/jvm/classloader/)
+            * [Memory Management](java-basics/jvm/memory/)
+            * [Just-in-Time Compiler](java-basics/jvm/jit/)
+
         * [Object-Oriented Conecpts](java-basics/oop/oop-concepts/)
+
         * Expressions 
             * [Types](java-basics/types+operators/types/)
             * [Enumerations](java-basics/types+operators/enumerations/)
             * [Operations](java-basics/types+operators/operators/)
+
         * Control Flow
             * [Conditional Statements](java-basics/control-flow/conditional-statements/)
             * [Loops](java-basics/control-flow/loops/)
-        * Classes and Objects     
+
+        * Object-Oriented Programming     
             * [Packages](java-basics/oop/packages/)
-            * Inheritance
-            * Interfaces
+            * [Classes and Obects](java-basics/oop/classes+objects/)
+            * [Interfaces](java-basics/oop/interfaces/)
+            * [Inheritance](java-basics/oop/inheritance/)
             * Exceptions
+
         * Generics 
+
         * Collections
+
     2. Advanced
         * I/O Streams 
         * Annotations
         * Reflection API
         * Concurrency
         * Serialization
+
     3. Modern Java (since Java 8) 
         * Records
         * Sealed Classes
