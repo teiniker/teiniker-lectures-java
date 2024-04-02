@@ -36,7 +36,7 @@
             * [Classes and Obects](java-basics/oop/classes+objects/)
             * [Interfaces](java-basics/oop/interfaces/)
             * [Inheritance](java-basics/oop/inheritance/)
-            * Exceptions
+            * [Exceptions](java-basics/oop/exceptions/)
 
         * Generics 
 
