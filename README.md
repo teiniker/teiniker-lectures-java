@@ -1,6 +1,5 @@
 # Java Programming by Example
 
-
 1. [Introduction](introduction/)
 
 2. Configuration Management
@@ -48,29 +47,5 @@
         * Reflection API
         * Concurrency
         * Serialization
-
-    3. Modern Java (since Java 8) 
-        * Records
-        * Sealed Classes
-        * Pattern Matching for Switch
-        * Text Blocks
-        * [Java Modules](java-modern/modules/) 
-
-4. Software Design 
-    * SOLID Principles
-    * (Best of) Design Patterns
-    * Functional Programming
-    * Error Handling and Logging
-    
-5. Software Quality 
-    * Static Code Analysis 
-    * xUnit Patterns
-    * Clean Code and Refactoring
-
-6. Software Architectures
-    * Layered Architectures
-    * Microservice Architectures 
-    
-7. Software Security 
 
 *Egon Teiniker, 2024, GPL v3.0*
