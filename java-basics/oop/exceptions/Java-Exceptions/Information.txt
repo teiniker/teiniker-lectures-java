@@ -1,0 +1,4 @@
+Information for this Example:
+
+This example shows how to handle Checked Exception in Java.
+Blah...

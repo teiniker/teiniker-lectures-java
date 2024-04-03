@@ -7,26 +7,8 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
- * The try-with-resources statement is a try statement that declares one or 
- * more resources. A resource is an object that must be closed after the 
- * program is finished with it. 
- * 
- * The try-with-resources statement ensures that each resource is closed at 
- * the end of the statement. 
- * 
- * Any object that implements java.lang.AutoCloseable, which includes all 
- * objects which implement java.io.Closeable, can be used as a resource.
- */
-
 public class TryWithResourcesTest
 {
-	// The class BufferedReader, in Java SE 7 and later, implements
-	// the interface java.lang.AutoCloseable.
-	// Because the BufferedReader instance is declared in a
-	// try-with-resource statement, it will be closed regardless of
-	// whether the try statement completes normally or abruptly.
-
 	private String readFirstLine(String path)
 	{
 		try (BufferedReader br = new BufferedReader(new FileReader(path)))
@@ -35,17 +17,22 @@ public class TryWithResourcesTest
 		}
 		catch(IOException e)
 		{
-			throw new IllegalStateException("Can't read from " + path, e);
+			throw new ServiceException("Can't read from " + path, e);
 		}
 	}
-	
-	
+
+
 	@Test
-	public void testReadFirstLineFinally() throws IOException
+	public void testReadFirstLine()
 	{
+		String line = readFirstLine("Information.txt");
 
-		String line = readFirstLine("README.txt");
+		Assert.assertEquals("Information for this Example:", line);
+	}
 
-		Assert.assertEquals("The try-with-resources Statement", line);
+	@Test(expected = ServiceException.class)
+	public void testReadFirstLine_UnknownFile()
+	{
+		readFirstLine("README.txt");
 	}
 }

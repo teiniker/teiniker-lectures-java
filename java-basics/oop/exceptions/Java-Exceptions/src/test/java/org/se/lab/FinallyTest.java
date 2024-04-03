@@ -9,7 +9,6 @@ import org.junit.Test;
 
 public class FinallyTest
 {
-
 	private String readFirstLine(String path)
 	{
 		BufferedReader br = null;
@@ -20,12 +19,12 @@ public class FinallyTest
 		}
 		catch(IOException e)
 		{
-			throw new IllegalStateException("Can't read from " + path, e);
+			// Exception wrapping
+			throw new ServiceException("Can't read from " + path, e);
 		}
 		finally
 		{
-			// Ensure that BufferedReader will be closed (also in the
-			// case of an exception).
+			// Close resources
 			try
 			{
 				if (br != null)
@@ -39,11 +38,16 @@ public class FinallyTest
 	}
 
 	@Test
-	public void testReadFirstLineFinally() throws IOException
+	public void testReadFirstLine()
 	{
+		String line = readFirstLine("Information.txt");
 
-		String line = readFirstLine("README.txt");
+		Assert.assertEquals("Information for this Example:", line);
+	}
 
-		Assert.assertEquals("The try-with-resources Statement", line);
+	@Test(expected = ServiceException.class)
+	public void testReadFirstLine_UnknownFile()
+	{
+		readFirstLine("README.txt");
 	}
 }

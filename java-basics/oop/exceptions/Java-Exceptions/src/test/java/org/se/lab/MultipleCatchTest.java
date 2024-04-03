@@ -12,15 +12,6 @@ import org.junit.Test;
 
 public class MultipleCatchTest
 {
-	/*
-	 * In Java SE 7 and later, a single catch block can handle more 
-	 * than one type of exception. 
-	 * This feature can reduce code duplication and lessen the 
-	 * temptation to catch an overly broad exception.
-	 * 
-	 * Note: If a catch block handles more than one exception type, 
-	 * then the catch parameter is implicitly final.
-	 */
 	private Connection getConnection(String propertyFileName)
 	{
 		final String driver;
@@ -43,15 +34,14 @@ public class MultipleCatchTest
 		}
 		catch (ClassNotFoundException | IOException | SQLException e)
 		{
-			throw new IllegalStateException("Can't connect to the database", e);
+			throw new ServiceException("Can't connect to the database", e);
 		}
 	}
 
 	
-	@Test(expected = RuntimeException.class)
-	public void testReadFirstLineFinally() throws IOException
+	@Test(expected = ServiceException.class)
+	public void testReadFirstLineFinally()
 	{
-		// There is no JDBC driver so we will cause an exception
 		getConnection("jdbc.properties");
 	}
 }
