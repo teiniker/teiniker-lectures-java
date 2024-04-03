@@ -1,0 +1,38 @@
+Exercise: Refactoring - Message
+-------------------------------------------------------------------------------
+
+Given a working implementation of a Message class. With the help of an enum value,
+different message formats are distinguished: Data, Error, and Notification.
+
+Depending on the message type, different properties are used and an extension
+for a new message type means massive changes in the enumeration and the message
+class.
+
+Therefore, you should perform the following refactoring steps:
+
+A) Abstract base class Message
+Convert the "Message" class to an abstract base class.
+Define the "toJson()"" method abstractly.
+
+B) Subclass DataMessage
+Implement the class "DataMessage" which derives from "Message" and implements
+the properties "id" and "message".
+Add an appropriate initialization constructor.
+Implement the "toJson()"" method.
+
+C) Subclass ErrorMessage
+Implement the class "ErrorMessage" which derives from "Message" and implements
+the properties "errorNumber" and "message".
+Add an appropriate initialization constructor.
+Implement the "toJson()"" method.
+
+D) Subclass NotificationMessage
+Implement the class "NotificationMessage" which derives from "Message" and implements
+the property "id".
+Add an appropriate initialization constructor.
+Implement the "toJson()"" method.
+
+E) Test cases
+Modify the existing test cases to instantiate the new subclasses.
+
+
