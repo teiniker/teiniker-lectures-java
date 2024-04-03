@@ -48,4 +48,8 @@
         * Concurrency
         * Serialization
 
+See also:[Software Design](https://github.com/teiniker/teiniker-lectures-softwaredesign), [Software Quality](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
+[Software Architectures](https://github.com/teiniker/teiniker-lectures-softwarearchitectures), [Secure Coding](https://github.com/teiniker/teiniker-lectures-securecoding), 
+[Secure Design](https://github.com/teiniker/teiniker-lectures-securedesign)
+
 *Egon Teiniker, 2024, GPL v3.0*
