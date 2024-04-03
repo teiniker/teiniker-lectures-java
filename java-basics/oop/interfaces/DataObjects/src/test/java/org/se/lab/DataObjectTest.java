@@ -33,16 +33,16 @@ public class DataObjectTest
 	public void testPolymorphism()
 	{
 		Book book = new Book("9780132350884", "Robert C. Martin", "Clean Code");
-		String bookCsv = toCsv(book);
+		String bookCsv = convert(book);
 		Assert.assertEquals("\"9780132350884\",\"Robert C. Martin\",\"Clean Code\"", bookCsv);
 
 		Dvd dvd = new Dvd("3636208", "Matt Groening", "The Simpsons - Season 11");
-		String dvdCsv = toCsv(dvd);
+		String dvdCsv = convert(dvd);
 		Assert.assertEquals("\"3636208\",\"Matt Groening\",\"The Simpsons - Season 11\"", dvdCsv);
 	}
 
 	// This method accepts all objects which implement the interface DataObject
-	private String toCsv(DataObject obj)
+	private String convert(DataObject obj)
 	{
 		return obj.toCsv();
 	}

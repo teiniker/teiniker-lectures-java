@@ -13,7 +13,7 @@ public class Date
 	public Date(String date)
 	{
 		// Split the string by "."
-		String[] parts = date.split("\\.");
+		String[] parts = date.split("\\.");	// 18.3.2024 => ["18","3","2024"]
 
 		// Convert the substrings into int values
 		this.day = Integer.parseInt(parts[0]);

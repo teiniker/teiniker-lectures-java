@@ -1,13 +1,13 @@
 package org.se.lab;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
-
-import org.junit.Assert;
-import org.junit.Test;
 
 /*
  * Also in Java there are methods which communicate error conditions via 
