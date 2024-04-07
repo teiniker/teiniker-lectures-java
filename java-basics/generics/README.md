@@ -106,7 +106,7 @@ long as the compiler can determine, or infer, the type arguments from the contex
 This pair of angle brackets, `<>`, is informally called the **diamond**.
 
 
-### Raw Types
+### Raw Types 
 
 A raw type is the name of a generic class or interface **without any type arguments**. 
 
@@ -156,12 +156,16 @@ public class ListUtils
     }
     //...
 }
+```
 
-The syntax for a generic method includes a list of type parameters, inside angle 
-brackets, which appears before the method's return type. 
+This method accepts an array of type `T[]` and returns a list of type `List<T>`,
+and does so for any type `T`.
 
-For static generic methods, the type parameter section must appear before the 
-method's return type.
+This is indicated by writing `<T>` at the beginning of the method signature,
+which declares `T` as a new type variable.
+
+The scope of the type variable `T` is local to the method itself.
+
 
 _Example:_ Using generic methods 
 ```Java
@@ -178,10 +182,147 @@ This allows us to invoke a generic method as an ordinary method, without specify
 type between angle brackets. 
 
 
+## Bounded Type Parameters
+
+Bounded type parameters in Java generics are a way to **restrict the types** that 
+can be used as arguments for type parameters. 
+
+By specifying bounds for type parameters, we can enforce that the actual type arguments 
+passed to a generic class, interface, or method must be **subclasses of a particular class** 
+or **implement a particular interface**. 
+
+This adds a **layer of type safety** and allows for more specific method implementations 
+that rely on the methods of the bound class or interface.
+
+Bounded type parameters are declared using the **extends** keyword in the type parameter 
+declaration. Despite the use of extends, the bound can be either a class or an interface.
+
+_Example:_ DAOTemplate excepts only `Entity` or `Entity` subclasses as type arguments.   
+```Java
+public interface DAOTemplate<E extends Entity>
+{
+	E insert(E user);
+	E update(E user);
+	void delete(E user);
+	E findById(int id);
+	List<E> findAll();
+}
+```
+
+To ensure that the `DAOTemplate` interface only uses `E` of type `Entity` or its 
+subclasses, we can add a type bound to the generic type `E`. This is done by 
+specifying **E extends Entity** in the interface definition.
+
+
+## Subtyping and Wildcards
+
+In Java generics, **wildcards** are **special kind of type arguments** that allow 
+for more flexible method parameters, return types, and field types. 
+They are denoted by the question mark **?** symbol. 
+
+Wildcards are particularly useful in situations where you have code that can work 
+with a **class hierarchy**. There are three main kinds of wildcards in Java: 
+unbounded wildcards, upper bounded wildcards, and lower bounded wildcards.
+
+* **Unbounded Wildcards**: An unbounded wildcard is specified using **?**, and it 
+    **represents any type**. It's most useful when you write a method that doesn't 
+    really depend on the type parameter. 
+
+* **Upper Bounded Wildcards**: Upper bounded wildcards are denoted by **? extends Type**, 
+    meaning the **unknown type is a subtype of Type, including Type itself**. This is used 
+    when you want to restrict a generic type to a certain family of classes. 
+    
+    _Example:_ Upper bounded wildcards   
+    ```Java
+    public static double sum(List<? extends Number> numbers)
+    {
+        double sum = 0.0;
+        for(Number n : numbers)
+        {
+            sum += n.doubleValue();
+        }
+        return sum;
+    }
+    ```
+
+    This method takes a collection of numbers, converts each to a double,
+    and sums them up.
+     
+    Whenever we use an iterator, we **get values** out of a data structure,
+    so we use a **<? extends T>** wildcard.
+    
+    `<? extends T>` means that the source list may have elements of any type that
+    is a subtype of `T`.
+     
+    Since we use `? extends Number`, all of the following parameters are legal:
+    `List<Integer>`, `List<Double>`, `List<Number>`, etc.
+
+
+* **Lower Bounded Wildcards**: Lower bounded wildcards are specified using **? super Type**, 
+    which means the **unknown type is a supertype of Type, including Type itself**. 
+    This is useful when you need to write a method that puts objects into a collection. 
+
+    _Example:_ Lower bounded wildcards   
+    ```Java
+    public static void fill(List<? super Integer> list, int n)
+    {
+        for(int i = 0; i<n; i++)
+        {
+            list.add(i);
+        }
+    }
+    ```
+    
+    This method takes a list of numbers and an integer `n`, and puts the first `n`
+    integers, starting from zero, into the list.
+
+    Whenever we use the `add()` method, we **put values** into a data structure, so we 
+    use a **<? super T>** wildcard.
+
+    Since we use `<? super Integer`, all of the following parameters are legal:
+    `List<Integer>`, `List<Number>`, `List<Object>`.
+
+
+The problem is that even though `Integer` is a subtype of `Number`, 
+`List<Integer>` is not a subtype of `List<Number>` (contrast this with arrays, 
+where `Integer[]` is a subtype of `Number[]`).
+
+* `List<? extends T>` means that the list may have elements of any type that is a subtype of `T`.
+* `List<? super T>` means that the list may have elements of any type that is a supertype of `T`.
+
+![Generics Subtypes](figures/Generics-Subtypes.png)
+
+* Non-wildcard parameterized types are subtypes of suitable bounded, wildcard parameterized types.
+* `List<?>` is not another way of saying `List<Object>`, rather, it is a way of saying 
+    `List<? extends Object>`.
+
+![Generics extends and super](figures/Generics-ExtendsSuper.png)
+
+> **Get and Put Principle**: Use an `extends` wildcard when you only get values out of 
+> a structure, use a `super` wildcard when you only put values into a structure, and don‘t 
+> use a wildcard when you both get and put.
+
+_Example:_ Reading data from and writing data to a data structure   
+```Java
+    public static <T> void copy(List<? extends T> src, List<? super T> dest)
+    {
+        for(int i = 0; i<src.size(); i++)
+        {
+            dest.add(src.get(i));
+        }
+    }
+```
+
+By using wildcards, developers can design APIs that are flexible and adaptable, 
+making it easier to work with complex class hierarchies and collections of various types.
+
 
 ## References
 
 * [The Java™ Tutorials: Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
 * [Baeldung: The Basics of Java Generics](https://www.baeldung.com/java-generics)
+
+* Maurice Naftalin, Philip Wadler. **Java Generics and Collections**. O‘Reilly, 2006.
+
 
 *Egon Teiniker, 2024, GPL v3.0*
