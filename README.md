@@ -37,9 +37,9 @@
             * [Inheritance](java-basics/oop/inheritance/)
             * [Exceptions](java-basics/oop/exceptions/)
 
-        * Generics 
+        * [Generics](java-basics/generics) 
 
-        * Collections
+        * [Collections](java-basics/collections)
 
     2. Advanced
         * I/O Streams 

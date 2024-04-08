@@ -13,12 +13,6 @@ collections. All collections frameworks contain the following:
 * **Implementations**: These are the concrete implementations of the collection interfaces. 
     In essence, they are reusable data structures.
 
-* **Algorithms**: These are the methods that perform useful computations, such as searching 
-    and sorting, on objects that implement collection interfaces. The algorithms are said to 
-    be polymorphic: that is, the same method can be used on many different implementations 
-    of the appropriate collection interface. 
-    In essence, algorithms are reusable functionality.
-
 ## Interfaces
 
 The core collection interfaces encapsulate different types of collections.
