@@ -23,10 +23,6 @@ Editions of IntelliJ IDEA:
     application servers.
 
 
-## A First Java Project
-
-
-
 
 ## Tutorials 
 
