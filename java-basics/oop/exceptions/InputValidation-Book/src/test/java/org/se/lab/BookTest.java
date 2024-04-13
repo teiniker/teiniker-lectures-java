@@ -5,12 +5,20 @@ import org.junit.Test;
 
 public class BookTest
 {
-	@Test(expected=IllegalArgumentException.class)
+	@Test
 	public void testInvalidIsbn_Blank()
 	{
-		new Book("", "Robert C. Martin", "Clean Code");
+		try
+		{
+			new Book("", "Robert C. Martin", "Clean Code");
+			Assert.fail();
+		}
+		catch(IllegalArgumentException e)
+		{
+			Assert.assertEquals("Invalid isbn number!", e.getMessage());
+			// passed
+		}
 	}
-
 	@Test(expected=IllegalArgumentException.class)
 	public void testInvalidIsbn_Null()
 	{
