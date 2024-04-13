@@ -1,8 +1,12 @@
 # Java Programming by Example
 
-1. [Introduction](introduction/)
+1. Introduction
+    * [Java Development Kit](introduction/Java.md)
 
 2. Configuration Management
+    * Integrated Development Environments
+        * [Eclipse](configuration-management/ide/Eclipse.md)
+        * [IntelliJ](configuration-management/ide/IntelliJ.md)
     * [Source Code Versioning](configuration-management/versioning/)
     * [Build Automation](configuration-management/building/)
     * [Test Automation](configuration-management/testing/)
