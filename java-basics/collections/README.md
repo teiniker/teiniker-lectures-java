@@ -147,6 +147,11 @@ Each of the general-purpose implementations provides all optional operations con
 
 
 ## References
+* [YouTube: Array vs. ArrayList in Java Tutorial - What's The Difference?](https://youtu.be/NbYgm0r7u6o?si=LuRvjvyi47hoMrlO)
+* [YouTube: LinkedList vs ArrayList in Java Tutorial - Which Should You Use?](https://youtu.be/5dscMs2hnDI?si=dZKW1cHdldaUP9uz)
+* [YouTube: Set and HashSet in Java](https://youtu.be/QvHBHuuddYk?si=Jsbd4sRkkcOA7Reh)
+* [YouTube: Map and HashMap in Java](https://youtu.be/H62Jfv1DJlU?si=XF9jzGHGLf2jIjp6)
+
 * [The Java™ Tutorials: Collections](https://docs.oracle.com/javase/tutorial/collections/)
 
 * [Baeldung: Java Collections](https://www.baeldung.com/java-collections)
