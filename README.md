@@ -7,9 +7,9 @@
     * Integrated Development Environments
         * [Eclipse](configuration-management/ide/Eclipse.md)
         * [IntelliJ](configuration-management/ide/IntelliJ.md)
-    * [Source Code Versioning](configuration-management/versioning/)
     * [Build Automation](configuration-management/building/)
     * [Test Automation](configuration-management/testing/)
+    * [Source Code Versioning](configuration-management/versioning/)
     * Documentation
         * [Source Code Documentation](configuration-management/documentation/source-code-doc/README.md)
         * [API Documentation](configuration-management/documentation/api-doc/README.md)
