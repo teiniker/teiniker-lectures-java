@@ -33,7 +33,7 @@ This prompted the Linux development community to develop their own tool...
     ```
 
 
-### Using Git Local
+## Using Git Local
 
 **Most operations in Git only need local files and resources to operate** – generally 
 no information is needed from another computer on a network.
@@ -186,7 +186,8 @@ Patterns for branching and merging:
 Examples of common scenarios using git:
 * [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
 
-## Git vs. GitHub vs. GitLab
+
+## Using Git Remote
 
 * **Git**: We know Git as an open-source distributed version control system (DVCS). 
     If we install the Git software, we can create local repositories and work with them. 
