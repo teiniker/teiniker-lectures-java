@@ -48,6 +48,7 @@ non-blocking operations, efficient buffer management, and the handling of multip
 connections via selectors, NIO can significantly improve the performance of network 
 applications and large file handling. 
 
+
 ## File I/O
 
 The `java.nio.file` package and its related package, `java.nio.file.attribute`, 
@@ -64,21 +65,52 @@ A **file** is identified by its **path** through the file system, beginning from
     list required to locate the file. 
 * A **relative path** needs to be combined with another path in order to access a file. 
 
-### Path Operations
 
-The **Path** class is a programmatic representation of a path in the file system. A 
-`Path` object contains the file name and directory list used to construct the path, 
-and is used to examine, locate, and manipulate files.
+### Path, Paths, and Files
+
+In the context of Java's New I/O (NIO) framework, introduced in Java 7 as part of the NIO.2 update 
+(`java.nio.file` package), three key components are `Path`, `Paths`, and `Files`. These classes 
+and interfaces provide a more **comprehensive and flexible file system management** approach 
+compared to the older `java.io.File` class. 
+
+* [**Path Interface**](https://docs.oracle.com/en%2Fjava%2Fjavase%2F21%2Fdocs%2Fapi%2F%2F/java.base/java/nio/file/Path.html):
+    Path represents a **system-independent path to a file or directory** in the file system. Unlike 
+    the File class, which mixes file path representation with file operations, Path is part of a 
+    cleaner separation of concerns, **focusing only on the path abstraction**.
+
+    * Paths can be absolute or relative.
+    * Provides various utility methods to manipulate paths, such as `resolve()`, `normalize()`, 
+        `relativize()`, and methods to convert between `Path` and `URI` or `File`.
+    * Supports iterating over the components of a path, making it useful for more complex path 
+        manipulation tasks.
+
+* [**Paths Class**](https://docs.oracle.com/en%2Fjava%2Fjavase%2F21%2Fdocs%2Fapi%2F%2F/java.base/java/nio/file/Paths.html):
+    `Paths` is a final utility class that provides static methods to create `Path` objects. 
+    It simplifies the creation of `Path` instances.
+    * The most commonly used method is `Paths.get(String first, String... more)`, which converts 
+        a system-dependent file path into a `Path` object. The method is a **varargs method**, 
+        allowing concatenation of path segments in a single call.
+    * It can also convert URIs to `Path` objects with `Paths.get(URI uri)`.    
+
+* [**Files Class**](https://docs.oracle.com/en%2Fjava%2Fjavase%2F21%2Fdocs%2Fapi%2F%2F/java.base/java/nio/file/Files.html):
+    `Files` is another utility class filled with static methods designed for **file and directory operations**, 
+    making use of `Path` objects. It does not represent data but instead provides a rich set of operations 
+    for file manipulation.
+    * File operations such as copy, move, delete, and file attribute management (e.g., checking, 
+        setting, and viewing file attributes).
+    * Directory operations like listing files in a directory (`newDirectoryStream`), creating directories 
+        (`createDirectory`), and walking file trees (`walk`, `walkFileTree`).
+    * File I/O operations for reading and writing files, which handle both binary and character 
+        content through methods like `readAllBytes`, `readAllLines`, `write`, etc.
+    * Advanced features such as checking file visibility, readability, comparability, and file 
+        store manipulations.
+
+`Path`, `Paths`, and `Files` provide a robust, flexible, and comprehensive toolset for handling file 
+systems in Java, suited for modern I/O needs and capable of sophisticated path manipulations and file 
+system interactions. 
 
 
-
-
-### File Operations
-
-
-
-
-
-
+## References
+* [The Java™ Tutorials: File I/O (Featuring NIO.2)](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
 
 *Egon Teiniker, 2024, GPL v3.0*
