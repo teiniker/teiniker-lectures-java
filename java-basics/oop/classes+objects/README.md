@@ -15,7 +15,7 @@
 
 
 * [Classes](classes/)
-* [Class Members](static-members/)
+* [Class Members](class-members/)
 * [Overloading](overloading/)
 * [Nested Classes](nested-classes/)
 * [Records](records/)
