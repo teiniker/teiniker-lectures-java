@@ -14,7 +14,7 @@
 > state), and it can perform actions through its methods (also known as behavior).
 
 
-* [Classes](class-members/)
+* [Classes](classes/)
 * [Class Members](static-members/)
 * [Overloading](overloading/)
 * [Nested Classes](nested-classes/)
