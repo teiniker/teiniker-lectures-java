@@ -1,22 +1,23 @@
 # Java Programming by Example
 
-1. Introduction
+1. **Introduction**
     * [Java Development Kit](introduction/Java.md)
 
-2. Configuration Management
+2. **Configuration Management**
+    * [Introduction](configuration-management/introduction/README.md)
     * Integrated Development Environments
         * [Eclipse](configuration-management/ide/Eclipse.md)
         * [IntelliJ](configuration-management/ide/IntelliJ.md)
-    * [Build Automation](configuration-management/building/)
-    * [Test Automation](configuration-management/testing/)
-    * [Source Code Versioning](configuration-management/versioning/)
-    * [Continuous Integration](configuration-management/continuous-integration/README.md)
     * Documentation
         * [Source Code Documentation](configuration-management/documentation/source-code-doc/README.md)
         * [API Documentation](configuration-management/documentation/api-doc/README.md)
         * [Unified Modeling Language (UML)](configuration-management/documentation/uml/)
+    * [Build Automation](configuration-management/building/)
+    * [Test Automation](configuration-management/testing/)
+    * [Source Code Versioning](configuration-management/versioning/)
+    * [Continuous Integration](configuration-management/continuous-integration/README.md)
 
-3. Java Programming 
+3. **Java Programming** 
 
     1. Basics
         * Java Virtual Machine
