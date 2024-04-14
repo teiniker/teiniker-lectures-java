@@ -41,8 +41,14 @@ and tools to suit particular types of development. Here are some of the key edit
 * **Eclipse IDE for JavaScript and Web Developers**
 * Many more...
 
+## Setup 
 
-## Common Settings
+* Download: [Eclipse](https://www.eclipse.org/downloads/packages/)
+* Unzip downloaded ZIP file 
+* Start Eclipse executable
+
+
+### Common Settings
 
 Before we can start working with Eclipse, a few important settings must be made.
 We can find the settings in the **[Window|Preferences]** menu.
