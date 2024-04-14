@@ -10,6 +10,7 @@
     * [Build Automation](configuration-management/building/)
     * [Test Automation](configuration-management/testing/)
     * [Source Code Versioning](configuration-management/versioning/)
+    * [Continuous Integration](configuration-management/continuous-integration/README.md)
     * Documentation
         * [Source Code Documentation](configuration-management/documentation/source-code-doc/README.md)
         * [API Documentation](configuration-management/documentation/api-doc/README.md)
