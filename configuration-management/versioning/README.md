@@ -1,4 +1,12 @@
-# Source Code Versioning
+# Source Code Versioning 
+
+Source code versioning is an essential practice in software development for managing 
+changes to source code over time. It provides a structured way to track versions, 
+maintain historical records of the entire project, and manage multiple contributions 
+from different developers. 
+
+
+## Git
 
 The Linux kernel is an open-source software project of fairly large scope.
 
@@ -8,8 +16,24 @@ and the commercial company that developed BitKeeper broke down.
 
 This prompted the Linux development community to develop their own tool...
 
+### Setup
 
-## Git
+* **Windows**: 
+    * [Download:](https://gitforwindows.org/)
+    * Start installer
+    * Use git command on the command line
+    ```
+        > git --version
+        git version 2.31.0.windows.1
+    ```
+
+* **Linux**: 
+    ```
+    $ sudo apt install git
+    ```
+
+
+### Using Git Local
 
 **Most operations in Git only need local files and resources to operate** – generally 
 no information is needed from another computer on a network.
