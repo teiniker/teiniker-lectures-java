@@ -53,7 +53,7 @@
             * [NIO](java-advanced/io/nio/) 
         * [Reflection API](java-advanced/reflection/)
         * [Annotations](java-advanced/annotations/)
-        * Concurrency
+        * [Concurrency](java-advanced/concurrency/)
         * Serialization
 
 See also:[Software Design](https://github.com/teiniker/teiniker-lectures-softwaredesign), [Software Quality](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
