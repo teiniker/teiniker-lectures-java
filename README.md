@@ -51,8 +51,8 @@
         * Input and Output 
             * [Streams](java-advanced/io/streams/)
             * [NIO](java-advanced/io/nio/) 
-        * Reflection API
-        * Annotations
+        * [Reflection API](java-advanced/reflection/)
+        * [Annotations](java-advanced/annotations/)
         * Concurrency
         * Serialization
 
