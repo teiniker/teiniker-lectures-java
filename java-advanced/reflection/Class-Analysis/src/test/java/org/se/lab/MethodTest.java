@@ -38,11 +38,11 @@ public class MethodTest
 	@Test
 	public void testInvokeToString() throws SecurityException, NoSuchMethodException, IllegalArgumentException, IllegalAccessException, InvocationTargetException 
 	{
-		User user = new User(7, "teini", "*****");
+		User user = new User(7, "teini", "ff69e6555c40008fb266006f18f719e4cff90900bc3f6f2bc83ef24c26791201");
 		
 		Method m = user.getClass().getDeclaredMethod("toString");
 		String s = (String)m.invoke(user);
 		
-		Assert.assertEquals("7,teini,*****", s);
+		Assert.assertEquals("7,teini,ff69e6555c40008fb266006f18f719e4cff90900bc3f6f2bc83ef24c26791201", s);
 	}
 }

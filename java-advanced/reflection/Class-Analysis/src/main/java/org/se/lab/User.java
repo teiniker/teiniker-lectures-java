@@ -2,9 +2,6 @@ package org.se.lab;
 
 public class User
 {
-	/*
-	 * Constructors
-	 */
 	public User(int id, String username, String password)
 	{
 		setId(id);
@@ -16,11 +13,8 @@ public class User
 	{
 		this(0, "", "");
 	}
-	
-	
-	/*
-	 * Property: id
-	 */
+
+	// Property: id
 	protected int id;
 	public int getId()
 	{
@@ -32,9 +26,7 @@ public class User
 	}
 	
 	
-	/*
-	 * Property: username
-	 */
+	// Property: username
 	private String username;
 	public String getUsername()
 	{
@@ -48,9 +40,7 @@ public class User
 	}
 	
 	
-	/*
-	 * Property: password
-	 */
+	// Property: password
 	private String password;
 	public String getPassword()
 	{
@@ -62,12 +52,8 @@ public class User
 			throw new NullPointerException("password");
 		this.password = password;
 	}
-	
-	
-	/*
-	 * Object methods
-	 */
-	
+
+	// Object methods
 	public String toString()
 	{
 		return getId() + "," + getUsername() + "," + getPassword();
