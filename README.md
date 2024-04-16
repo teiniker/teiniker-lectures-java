@@ -46,6 +46,8 @@
         * [Generics](java-basics/generics) 
 
         * [Collections](java-basics/collections)
+        
+        * [Exercises & Model Solutions](java-basics/exercises/)
 
     2. Advanced
         * Input and Output 
