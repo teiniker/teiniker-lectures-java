@@ -233,6 +233,8 @@ _Example_: Invoke a `Method` from a given object.
 
 ## References
 
+* [YouTube: Java Reflection Explained](https://youtu.be/bhhMJSKNCQY?si=nWOjmLaedsvM2nNu)
+
 * [The Java™ Tutorials: The Reflection API](https://docs.oracle.com/javase/tutorial/reflect/index.html)
 * [Baeldung: Guide to Java Reflection](https://www.baeldung.com/java-reflection)
 
