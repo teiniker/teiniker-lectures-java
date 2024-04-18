@@ -146,6 +146,34 @@ In summary, the Java Collections Framework provides several **general-purpose im
 Each of the general-purpose implementations provides all optional operations contained in its interface.
 
 
+## Object Methods
+
+To ensure that objects of a class can be stored in different types of collections 
+such as `HashSet`, `TreeSet`, or used as keys in `HashMap`, `TreeMap`, we might 
+need to implement certain methods depending on the type of collection:
+
+* **Any Collection (ArrayList, LinkedList, HashSet, etc.)**:
+    To ensure correct behavior (like avoiding duplicate values in sets or keys 
+    in maps), we might need to override:
+    * **equals(Object obj)**: To determine whether two objects are "equal" in 
+        the context of collections such as `HashSet` or as keys in a `HashMap`.
+    * **hashCode()**: This method must be overridden whenever `equals()` is, 
+        to maintain the general contract between equals and hashCode — equal 
+        objects must have equal hash codes. This is crucial for collections 
+        like `HashSet` and key sets in `HashMap`, which rely on hash codes for 
+        storing elements efficiently.
+
+* **Sorted Collection (TreeSet, TreeMap keys)**:
+    If we use collections that sort their elements (like `TreeSet` or as keys 
+    in a `TreeMap`), we need to ensure the objects can be compared. This can 
+    be done in two ways:
+    * **Implementing the Comparable interface**: Override the `compareTo(T o)` 
+    method in your class, which defines the natural ordering of instances.
+    * **Providing a Comparator**: Alternatively, we can pass a `Comparator` 
+        object to the collection’s constructor, which then uses it to compare 
+        elements.
+
+
 ## References
 * [YouTube: Array vs. ArrayList in Java Tutorial - What's The Difference?](https://youtu.be/NbYgm0r7u6o?si=LuRvjvyi47hoMrlO)
 * [YouTube: LinkedList vs ArrayList in Java Tutorial - Which Should You Use?](https://youtu.be/5dscMs2hnDI?si=dZKW1cHdldaUP9uz)
