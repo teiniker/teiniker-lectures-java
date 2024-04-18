@@ -42,7 +42,7 @@ public class FloatingPointComparisonTest
 	
 	
 	@Test
-	public void testRelativeDelta1()
+	public void testRelativeDelta()
 	{
 		double expected = Math.PI; 
 		double value = 3.14; 
