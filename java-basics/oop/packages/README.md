@@ -116,5 +116,6 @@ that provide essential functionalities for various aspects of programming.
 
 * [The Java™ Tutorials: Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
 
+* [Java API: Module java.base / Packages](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/module-summary.html#packages-summary)
 
 *Egon Teiniker, 2024, GPL v3.0*

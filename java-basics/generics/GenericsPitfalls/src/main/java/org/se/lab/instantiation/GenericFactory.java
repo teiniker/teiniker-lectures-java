@@ -1,31 +1,32 @@
 package org.se.lab.instantiation;
 
 import java.lang.reflect.Array;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GenericFactory
 {
 		
-//	public static <E> E createElement()
-//	{
-//		// Error: cannot instantiate the type E!
-//		E e = new E();
-//		return e;
-//	}
+	//	public static <E> E createElement()
+	//	{
+	//		// Error: cannot instantiate the type E!
+	//		E e = new E();
+	//		return e;
+	//	}
 
 	public static <E> E createElement(Class<E> elementType)
 	{
-		E element = null;
 		try
 		{
-			element = elementType.getDeclaredConstructor().newInstance();
-		} 
-		catch(Exception ex)
+			E element = elementType.getDeclaredConstructor().newInstance();
+			return element;
+		}
+		catch(NoSuchMethodException | InvocationTargetException
+			  | InstantiationException | IllegalAccessException e)
 		{
-			ex.printStackTrace();
-		} 
-		return element;
+			throw new IllegalArgumentException("Can't create new Instance!", e);
+		}
 	}
 	
 	
@@ -38,19 +39,14 @@ public class GenericFactory
 	}
 	
 
-	/**
-	* We cannot instantiate an array of a type represented by a type parameter. 
-	* The compiler doesn't know what type V really represents, so it cannot 
-	* instantiate an array of V.
-	*/
-//	public static <E> E[] fillArray(E element, int number)
-//	{
-//		// Error: cannot create a generic array of E!
-//		E[] array = new E[number];
-//		for(int i = 0; i<number; i++)
-//			array[i] = element;
-//		return array;		
-//	}
+	//	public static <E> E[] fillArray(E element, int number)
+	//	{
+	//		// Error: cannot create a generic array of E!
+	//		E[] array = new E[number];
+	//		for(int i = 0; i<number; i++)
+	//			array[i] = element;
+	//		return array;		
+	//	}
 	
 	@SuppressWarnings("unchecked")
 	public static <E> E[] createArray(Class<E> elementType, E element, int number)

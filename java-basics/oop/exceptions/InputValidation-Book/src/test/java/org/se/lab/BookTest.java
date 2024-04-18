@@ -19,6 +19,7 @@ public class BookTest
 			// passed
 		}
 	}
+
 	@Test(expected=IllegalArgumentException.class)
 	public void testInvalidIsbn_Null()
 	{
