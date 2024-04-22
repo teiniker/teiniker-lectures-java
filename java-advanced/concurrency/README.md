@@ -39,7 +39,7 @@ But concurrency is possible even on simple systems, without multiple processors 
     This thread has the ability to create additional threads.
 
 _Example_: Creating and starting multiple threads
-``` Java
+```Java
 public class RunnableExample
     implements Runnable
 {
