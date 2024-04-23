@@ -131,6 +131,8 @@ included with the JDK.
 
 ## References
 
+* [DevJava: Getting Started with Java](https://dev.java/learn/getting-started/)
+
 * JDK
     * [OpenJDK](https://jdk.java.net/java-se-ri/17)
     * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)

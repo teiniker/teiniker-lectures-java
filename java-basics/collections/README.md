@@ -180,7 +180,7 @@ need to implement certain methods depending on the type of collection:
 * [YouTube: Set and HashSet in Java](https://youtu.be/QvHBHuuddYk?si=Jsbd4sRkkcOA7Reh)
 * [YouTube: Map and HashMap in Java](https://youtu.be/H62Jfv1DJlU?si=XF9jzGHGLf2jIjp6)
 
-* [The Java™ Tutorials: Collections](https://docs.oracle.com/javase/tutorial/collections/)
+* [DevJava: The Collections Framework](https://dev.java/learn/api/collections-framework/)
 
 * [Baeldung: Java Collections](https://www.baeldung.com/java-collections)
 * [Baeldung: Choosing the Right Java Collection](https://www.baeldung.com/java-choose-list-set-queue-map)
