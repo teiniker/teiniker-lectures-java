@@ -55,8 +55,13 @@
             * [NIO](java-advanced/io/nio/) 
         * [Reflection API](java-advanced/reflection/)
         * [Annotations](java-advanced/annotations/)
-        * [Concurrency](java-advanced/concurrency/)
         * Serialization
+            * [Object Streams](java-advanced/serialization/object-streams/)
+            * [XML](java-advanced/serialization/xml/)
+            * [JSON](java-advanced/serialization/json/)
+        * [Concurrency](java-advanced/concurrency/)
+
+
 
 See also:[Software Design](https://github.com/teiniker/teiniker-lectures-softwaredesign), [Software Quality](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
 [Software Architectures](https://github.com/teiniker/teiniker-lectures-softwarearchitectures), [Secure Coding](https://github.com/teiniker/teiniker-lectures-securecoding), 
