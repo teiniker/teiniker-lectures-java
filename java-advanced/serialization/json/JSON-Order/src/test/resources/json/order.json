@@ -1,0 +1,23 @@
+{
+  "id" : 100,
+  "name" : "001-20151020-007",
+  "lines" : [
+    {
+    "id" : 101,
+    "quantity" : 2,
+    "product" : {
+      "id" : 102,
+      "description" : "Effective Java",
+      "price" : 3336
+    }
+  },
+  {
+    "id" : 101,
+    "quantity" : 2,
+    "product" : {
+      "id" : 103,
+      "description" : "Design Patterns",
+      "price" : 5280
+    }
+  } ]
+}
