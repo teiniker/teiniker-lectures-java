@@ -22,6 +22,6 @@
 
 
 ## References
-* [The Java™ Tutorials: Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)
+* [DevJava: Classes and Objects](https://dev.java/learn/classes-objects/)
 
 *Egon Teiniker, 2024, GPL v3.0*

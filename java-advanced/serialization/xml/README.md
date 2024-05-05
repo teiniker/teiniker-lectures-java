@@ -87,13 +87,13 @@ conversion of service data into XML requests and responses automatically.
 
 _Example:_ Marshalling Java objects into XML
 ```Java
-	@Test
-	public void testWriteOrder() throws JAXBException, IOException
-	{
-	    Order order = new Order(100, "001-20151020-007");
-	    order.getLines().add(new OrderLine(101, 2, new Product(102, "Effective Java", 3336)));
-	    order.getLines().add(new OrderLine(101, 2, new Product(103, "Design Patterns", 5280)));
-	    
+  @Test
+  public void testWriteOrder() throws JAXBException, IOException
+  {
+      Order order = new Order(100, "001-20151020-007");
+      order.getLines().add(new OrderLine(101, 2, new Product(102, "Effective Java", 3336)));
+      order.getLines().add(new OrderLine(101, 2, new Product(103, "Design Patterns", 5280)));
+
       JAXBContext context = JAXBContext.newInstance(Order.class);
       Marshaller marshaller = context.createMarshaller();
       marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -102,22 +102,22 @@ _Example:_ Marshalling Java objects into XML
       out.close();            
       String xml = out.toString();
       System.out.println(xml);
-	}	
+  }
 ```
 
 _Example:_ Unmarshalling XML back into Java objects
 ```Java
-	@Test
-	public void testReadOrder() 
+  @Test
+  public void testReadOrder() 
     throws SAXException, JAXBException, FileNotFoundException
-	{
-		Source src = new StreamSource(new FileReader(new File("src/test/resources/xml", "order.xml")));
-		Unmarshaller unmarshaller = context.createUnmarshaller();
-		JAXBElement<Order> element = unmarshaller.unmarshal(src, Order.class);
-		Order order = element.getValue();
+  {
+      Source src = new StreamSource(new FileReader(new File("src/test/resources/xml", "order.xml")));
+      Unmarshaller unmarshaller = context.createUnmarshaller();
+      JAXBElement<Order> element = unmarshaller.unmarshal(src, Order.class);
+      Order order = element.getValue();
 
-		Assert.assertEquals("001-20151020-007", order.getName());
-	}
+      Assert.assertEquals("001-20151020-007", order.getName());
+  }
 ```
 
 ## References

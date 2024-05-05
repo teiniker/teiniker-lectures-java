@@ -321,7 +321,8 @@ making it easier to work with complex class hierarchies and collections of vario
 
 * [YouTube: Generics In Java - Full Simple Tutorial](https://youtu.be/K1iu1kXkVoA?si=5UQ7fRTocWzbC8vi)
 
-* [The Java™ Tutorials: Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+* [DevJava: Generics](https://dev.java/learn/generics/)
+
 * [Baeldung: The Basics of Java Generics](https://www.baeldung.com/java-generics)
 
 * Maurice Naftalin, Philip Wadler. **Java Generics and Collections**. O‘Reilly, 2006.
