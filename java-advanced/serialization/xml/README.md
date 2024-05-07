@@ -122,5 +122,8 @@ _Example:_ Unmarshalling XML back into Java objects
 
 ## References
 
+* [Baeldung: Guide to JAXB](https://www.baeldung.com/jaxb)
+
+* [The Java™ Tutorials: Introduction to JAXB](https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html)
 
 *Egon Teiniker, 2024, GPL v3.0*

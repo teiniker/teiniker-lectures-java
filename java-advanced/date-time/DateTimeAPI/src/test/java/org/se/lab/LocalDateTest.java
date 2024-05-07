@@ -16,12 +16,12 @@ public class LocalDateTest
 	@Test
 	public void testLocalDateNow()
 	{
-		LocalDate data = LocalDate.now();
-		System.out.println(data);
+		LocalDate date = LocalDate.now();
+		System.out.println(date);
 
-		System.out.println("Day: " + data.getDayOfMonth());
-		System.out.println("Month: "+ data.getMonth().name());
-		System.out.println("Year: " + data.getYear());
+		System.out.println("Day: " + date.getDayOfMonth());
+		System.out.println("Month: "+ date.getMonth().name());
+		System.out.println("Year: " + date.getYear());
 	}
 
 	@Test
