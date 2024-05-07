@@ -1,0 +1,24 @@
+Exercise: File Handling - File List
+-------------------------------------------------------------------------------
+
+Write a class called "DirectoryAnalyzer" which collects information about the
+content of a given directory.
+
+Here is the directory to analyze:
+$ ll data
+    -rwxr-xr-- 1 student student 16703 Apr 11 21:19 logo.png
+    -rw-r--r-- 1 student student  2240 Apr 11 22:53 song.txt
+    drwxr-xr-x 2 student student  4096 May  7 20:34 tmp
+
+Implement the following methods:
+
+A) List<Path> getListOfFiles(String directory)
+    Use the classes "Paths" and "Files" to generate a List<Path> objects.
+
+B) List<String> generateFileList(List<Path> fileList)
+    Extract information from each "Path" object and generate a String out of it.
+    Example: "File: logo.png - Size: 16703 bytes"
+    Collect these Strings in a List<String>.
+
+Tip: Wrap all checked "IOException"s into runtime "ServiceException"s.
+

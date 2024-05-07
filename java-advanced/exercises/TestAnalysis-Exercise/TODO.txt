@@ -1,0 +1,23 @@
+Exercise: Annotations & Reflection API - Test Analysis
+-------------------------------------------------------------------------------
+
+Write a class called "TestClassAnalysis" which analyzes the Annotations
+of JUnit 4 test classes.
+
+Implement the following operations:
+
+A) TestClassAlaysis(Class<?> clazz)
+    A constructor which gets and stores the Class object of a test class.
+
+B) boolean hasBefore()
+    Checks if the test class has a method annotated with @Before.
+
+C) boolean hasAfter()
+    Checks if the test class has a method annotated with @After.
+
+D) boolean hasTest()
+    Checks if the test class has at least one method annotated with @Test.
+
+E) List<String> getTestMethods()
+    Generates a list of all methods names which has been annotated with
+    @Test.
