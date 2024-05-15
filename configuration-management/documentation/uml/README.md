@@ -81,3 +81,4 @@ When should we use UML?
 * Robert C. Martin. **UML for Java Programmers**. Prentice Hall, 2003
 * Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition 2004
 
+*Egon Teiniker, 2024, GPL v3.0*

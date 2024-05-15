@@ -1,7 +1,8 @@
 # Java Programming by Example
 
 1. **Introduction**
-    * [Java Development Kit](introduction/Java.md)
+    * [Java Development Kit](introduction/jdk/)
+    * [Using ChatGPT](introduction/chatGPT/)
 
 2. **Configuration Management**
     * [Introduction](configuration-management/introduction/README.md)
@@ -50,6 +51,8 @@
         * [Exercises & Model Solutions](java-basics/exercises/)
 
     2. Advanced
+        * [Date Time API](java-advanced/date-time/)
+
         * Input and Output 
             * [Streams](java-advanced/io/streams/)
             * [NIO](java-advanced/io/nio/) 
@@ -66,7 +69,6 @@
         * [Concurrency](java-advanced/concurrency/)
 
         * [Exercises & Model Solutions](java-advanced/exercises/)
-
 
 
 See also:[Software Design](https://github.com/teiniker/teiniker-lectures-softwaredesign), [Software Quality](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
