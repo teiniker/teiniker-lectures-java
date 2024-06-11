@@ -68,6 +68,62 @@ can be handled more cleanly. Annotations allow for more flexible and powerful wa
 **attach metadata to classes, methods, and fields**. They can contain elements to store 
 additional information, and their presence can be easily checked through reflection.
 
+
+## Default Methods
+Default methods are methods defined in an interface with a default implementation. 
+This allows new methods to be added to interfaces without breaking existing implementations.
+
+* **Syntax**: A default method is defined using the default keyword in the interface.
+
+* **Purpose**: To provide a default implementation that can be used by classes that do 
+    not override the method.
+
+* **Override**: Classes implementing the interface can choose to override the default method.
+
+_Example:_ Using a default method in an interface
+```Java
+public interface Comparator<T> {
+    
+    int compare(T o1, T o2);
+    
+    default Comparator<T> reversed() {
+        return Collections.reverseOrder(this);
+    }
+
+    //...
+```
+
+Default methods allow interfaces to **provide a default implementation***. 
+They can be overridden by implementing classes.
+
+
+## Static Methods
+Static methods in interfaces are methods that are associated with the interface itself 
+rather than with any particular instance of the interface. They can be called without 
+creating an instance of the interface.
+
+* **Syntax**: A static method is defined using the `static` keyword in the interface.
+* **Purpose**: To define utility methods that are related to the interface but do not 
+    depend on instance variables.
+* **Call**: They are called using the interface name.
+
+_Example:_ Using a static method in an interface
+```Java
+public interface List<E> extends SequencedCollection<E> {
+    int size();
+    boolean isEmpty();
+
+    static <E> List<E> of(E e1, E e2, E e3) {
+        return ImmutableCollections.listFromTrustedArray(e1, e2, e3);
+    }
+
+    //...
+}
+```
+
+Static methods belong to the interface itself, not to instances. They are used for 
+**utility or helper methods** related to the interface.
+
 ## References
 
 * [Baeldung: Java Interfaces](https://www.baeldung.com/java-interfaces)
