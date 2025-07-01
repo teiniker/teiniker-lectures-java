@@ -8,10 +8,14 @@ public class EMailTest
     @Test
     public void testConstructor()
     {
+        // Setup
         EMail mail = new EMail(7, "egon.teiniker@fhj.at");
 
+        // Exercise + Verify
         Assert.assertEquals(7, mail.getId());
         Assert.assertEquals("egon.teiniker@fhj.at", mail.getAddress());
+
+        // Teardown
     }
 
     @Test(expected = IllegalArgumentException.class)

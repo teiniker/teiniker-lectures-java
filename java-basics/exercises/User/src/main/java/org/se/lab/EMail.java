@@ -16,6 +16,7 @@ public class EMail
     /*
      * Property: address:String
      */
+
     private String address;
     public String getAddress()
     {
@@ -25,7 +26,6 @@ public class EMail
     {
         this.address = address;
     }
-
 
     /*
      * Association: ---[1]-> User
