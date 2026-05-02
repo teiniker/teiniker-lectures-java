@@ -1,7 +1,0 @@
-# Ignore Gradle project-specific cache directory
-.gradle
-build.gradle.kts
-settings.gradle.kts
-
-# Ignore Gradle build output directory
-build
