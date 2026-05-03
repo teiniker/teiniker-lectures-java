@@ -2,7 +2,6 @@
 
 1. **Introduction**
     * [Java Development Kit](introduction/jdk/)
-    * [Using ChatGPT](introduction/chatGPT/)
 
 2. **Configuration Management**
     * [Introduction](configuration-management/introduction/README.md)
