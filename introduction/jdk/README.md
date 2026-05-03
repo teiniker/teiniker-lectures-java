@@ -12,33 +12,20 @@ Installing a JDK is as easy as downloading and unzipping a file.
 The `PATH` environment variable must point to the `bin/` folder of the JDK.
 In addition, you should set a `JAVA_HOME` environment variable.
 
-### Windows
-
-```
-    URL: https://jdk.java.net/java-se-ri/17
-    Download: openjdk-17+35_windows-x64_bin.zip
-    Unzip and move to: C:\local\jdk-17 
-    Set: JAVA_HOME=C:\local\jdk-17
-    Add to PATH:  C:\local\jdk-17\bin
-
-    >javac -version
-    javac 17
-```
-
 ### Linux 
 
 ```
-    URL: https://jdk.java.net/java-se-ri/17
-    Download: openjdk-17+35_linux-x64_bin.tar.gz
-    $ tar xvzf openjdk-17+35_linux-x64_bin.tar.gz
+    URL: https://jdk.java.net/java-se-ri/25
+    Download: openjdk-25+36_linux-x64_bin.tar.gz
+    $ tar xvzf openjdk-25+36_linux-x64_bin.tar.gz
     $ sudo mkdir /opt/java
-    $ sudo mv jdk-17/ /opt/java/
+    $ sudo mv jdk-25/ /opt/java/
 
-    Set: JAVA_HOME=/opt/java/jdk-17
+    Set: JAVA_HOME=/opt/java/jdk-25
     Add to PATH: $JAVA_HOME/bin
 
     $ javac -version
-    javac 17
+    javac 25
 ```
 
 
@@ -51,24 +38,26 @@ Oracle intends to make future **LTS releases every two years** meaning
 the next planned LTS release is Java 25 in September 2025.
 
 ```
-Java SE 8 (LTS)     2014    March	
-Java SE 9           2017    September 	
-Java SE 10          2018    March 		
-Java SE 11 (LTS)    2018    September 
-Java SE 12          2019    March 	
-Java SE 13          2019    September
-Java SE 14          2020    March
-Java SE 15          2020    September
-Java SE 16          2021    March
-Java SE 17 (LTS)    2021    September
-Java SE 18          2022    March
-Java SE 19          2022    September 
-Java SE 20          2023    March 
-Java SE 21 (LTS)    2023    September
-Java SE 22          2024    March 
-Java SE 23          2024    September 
-Java SE 24          2025    March 
-Java SE 25 (LTS)    2025    September 
+JDK 8 (LTS)     2014    March	
+JDK 9           2017    September 	
+JDK 10          2018    March 		
+JDK 11 (LTS)    2018    September 
+JDK 12          2019    March 	
+JDK 13          2019    September
+JDK 14          2020    March
+JDK 15          2020    September
+JDK 16          2021    March
+JDK 17 (LTS)    2021    September
+JDK 18          2022    March
+JDK 19          2022    September 
+JDK 20          2023    March 
+JDK 21 (LTS)    2023    September
+JDK 22          2024    March 
+JDK 23          2024    September 
+JDK 24          2025    March 
+JDK 25 (LTS)    2025    September 
+JDK 26          2026    March
+JDK 27          2026    September
 ...
 ```
 
@@ -134,8 +123,8 @@ included with the JDK.
 * [DevJava: Getting Started with Java](https://dev.java/learn/getting-started/)
 
 * JDK
-    * [OpenJDK](https://jdk.java.net/java-se-ri/17)
-    * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
+    * [OpenJDK](https://jdk.java.net/java-se-ri/25)
+    * [JDK Documentation](https://docs.oracle.com/en/java/javase/25/)
     * [Baeldung: Differences Between Oracle JDK and OpenJDK](https://www.baeldung.com/oracle-jdk-vs-openjdk)
 
 * Java Programming 
@@ -145,4 +134,4 @@ included with the JDK.
 Version 21 API Specification](https://docs.oracle.com/en/java/javase/21/docs/api/index.html)
 
 
-*Egon Teiniker, 2024, GPL v3.0*
+*Egon Teiniker, 2024-2026, GPL v3.0*
